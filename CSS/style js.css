@@ -1,0 +1,7 @@
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Kantumruy+Pro:wght@400;500;600;700&display=swap');
+    body {
+      font-family: 'Kantumruy Pro', sans-serif;
+    }
+    code, pre {
+      font-family: 'Fira Code', monospace;
+    }

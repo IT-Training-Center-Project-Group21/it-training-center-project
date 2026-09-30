@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="km">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson Python</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/svg+xml" href="/Pictures/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="/CSS/style python.css" />
+</head>
+
+<body class="text-gray-800 bg-white font-sans leading-normal">
+  <header class="fixed top-0 inset-x-0 z-40 bg-white/90 dark:bg-[#0b1220]/90 backdrop-blur shadow-sm">
+    <input type="checkbox" id="menu-toggle" class="peer hidden" aria-hidden="true">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 font-extrabold text-[#01366F] dark:text-[#8ab4ff]"
+        aria-label="IT Training Center — Home">
+        <img src="/Pictures/logo-icon.png" alt="" class="h-10 w-auto rounded-md p-0.5"><span
+          class="hidden min-[400px]:inline text-sm sm:text-base">IT Training Center</span>
+      </a>
+      <div class="flex items-center gap-6 lg:gap-8">
+        <nav class="hidden md:flex gap-6 lg:gap-8 text-sm font-medium"><a href="index.html"
+            class="py-1 border-b-2 border-transparent hover:border-blue-900 hover:text-blue-900 dark:hover:text-blue-900 transition-all duration-300">Home</a><a
+            href="about.html"
+            class="py-1 border-b-2 border-transparent hover:border-blue-900 hover:text-blue-900 dark:hover:text-blue-900 transition-all duration-300">About</a><a
+            href="courses.html"
+            class="py-1 border-b-2 border-blue-900 text-blue-900 dark:text-blue-900 hover:border-blue-900 hover:text-blue-900 dark:hover:text-blue-900 transition-all duration-300">Courses</a><a
+            href="contact.html"
+            class="py-1 border-b-2 border-transparent hover:border-blue-900 hover:text-blue-900 dark:hover:text-blue-900 transition-all duration-300">Contact</a>
+        </nav>
+        <a href="enroll-now.html"
+          class="inline-block text-center transition-all duration-300 hover:scale-105 hover:shadow-xl bg-[#0a3d62] text-white px-3 sm:px-4 py-2 rounded-lg font-semibold text-xs sm:text-sm">Enroll
+          Now</a>
+        <label for="menu-toggle" aria-label="Toggle menu" class="md:hidden p-2 text-2xl cursor-pointer">☰</label>
+      </div>
+    </div>
+    <div
+      class="md:hidden bg-white dark:bg-[#111a2e] border-t dark:border-[#2a3956] max-h-0 overflow-hidden transition-all duration-500 peer-checked:max-h-96">
+      <div class="px-4 py-2 flex flex-col">
+        <a href="index.html" class="py-3 border-b dark:border-[#2a3956] font-medium">Home</a>
+        <a href="about.html" class="py-3 border-b dark:border-[#2a3956] font-medium">About</a>
+        <a href="courses.html" class="py-3 border-b dark:border-[#2a3956] font-medium">Courses</a>
+        <a href="contact.html" class="py-3 border-b dark:border-[#2a3956] font-medium">Contact</a>
+
+      </div>
+
+    </div>
+  </header>
+  <div
+    class="relative w-full h-[220px] sm:h-[280px] md:h-[320px] overflow-hidden mb-10 bg-[#030914] flex flex-col items-center justify-center border border-blue-900/40 shadow-2xl">
+    <div class="absolute inset-0 overflow-hidden opacity-40">
+      <div class="tech-line left-[10%]" style="animation-delay: 0s"></div>
+      <div class="tech-line left-[25%]" style="animation-delay: 1.2s"></div>
+      <div class="tech-line left-[40%]" style="animation-delay: 0.5s"></div>
+      <div class="tech-line left-[60%]" style="animation-delay: 1.8s"></div>
+      <div class="tech-line left-[75%]" style="animation-delay: 0.8s"></div>
+      <div class="tech-line left-[90%]" style="animation-delay: 1.5s"></div>
+    </div>
+    <h1
+      class="font-python relative z-10 text-white text-5xl sm:text-7xl md:text-8xl tracking-wider text-center select-none animate-python-glow">
+      PYTHON
+    </h1>
+  </div>
+  <main class="max-w-4xl mx-auto px-4 py-8">
+    <div class="text-center mb-10">
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900">Python</h1>
+      <p class="text-gray-600 text-sm md:text-base mt-2 max-w-xl mx-auto">
+        Python is an easy to interpret and high-level object-oriented
+        programming language with easy-to-read syntax.
+      </p>
+    </div>
+    <section class="mb-10">
+      <h2 class="text-xl md:text-2xl font-bold text-gray-900 mb-4">
+        Lesson 1: Introduction to Python and basic Syntax
+      </h2>
+
+      <div class="space-y-2 text-gray-700 mb-6 leading-relaxed text-sm md:text-base">
+        <p>
+          <strong class="text-black">Syntax:</strong> Python uses clean and
+          simple syntax. It uses spaces (Indentation) to define code blocks
+          instead of curly braces {}.
+        </p>
+        <p>
+          <strong class="text-black">Variables & Printing:</strong> You can
+          create variables directly without declaring types, and use print()
+          to show output.
+        </p>
+        <p>
+          <strong class="text-black">Basic Data Types:</strong> Numbers, text
+          (Strings), and Booleans (True/False).
+        </p>
+      </div>
+
+      <h3 class="font-bold text-lg text-gray-900 mb-3">Example:</h3>
+      <div class="bg-[#121212] text-gray-200 rounded-xl p-5 font-mono text-sm leading-relaxed overflow-x-auto">
+        <pre><code><span class="text-gray-500"># 1. Variables and Data Types</span>
+name=<span class="text-green-400">"Dara"</span>         <span class="text-gray-500"># String</span>
+age =<span class="text-purple-400">22</span>            <span class="text-gray-500"># Integer</span>
+gpa =<span class="text-purple-400">3.8</span>           <span class="text-gray-500"># Float</span>
+is_passed =<span class="text-purple-400">True</span>     <span class="text-gray-500"># Boolean</span>
+
+<span class="text-gray-500"># 2. Printing Output</span>
+<span class="text-blue-400">print</span>(<span class="text-green-400">"Name:"</span>, name)
+<span class="text-blue-400">print</span>(<span class="text-green-400">"Age:"</span>, age)
+
+<span class="text-gray-500"># 3. Simple Condition using Indentation</span>
+<span class="text-purple-400">if</span> age &gt;= <span class="text-purple-400">18</span>:
+<span class="text-blue-400">print</span>(<span class="text-green-400">"You are an adult."</span>) <span class="text-gray-500"># Indented with 4 spaces</span>
+<span class="text-purple-400">else</span>:
+    <span class="text-blue-400">print</span>(<span class="text-green-400">"You are a minor."</span>)</code></pre>
+      </div>
+    </section>
+    <section class="mb-10">
+      <h2 class="text-xl md:text-2xl font-bold text-gray-900 mb-4">
+        Lesson 2: Data Structures (Lists, Dictionaries, Tuples, Sets)
+      </h2>
+
+      <div class="space-y-2 text-gray-700 mb-6 leading-relaxed text-sm md:text-base">
+        <p>
+          <strong class="text-black">List ([]):</strong> Ordered and
+          changeable collection of items.
+        </p>
+        <p>
+          <strong class="text-black">Dictionary ({key: value}):</strong>
+          Stores data in key-value pairs.
+        </p>
+        <p>
+          <strong class="text-black">Tuple (()):</strong> Ordered but cannot
+          be changed (immutable).
+        </p>
+        <p>
+          <strong class="text-black">Set ({}):</strong> Unordered collection
+          of unique items (no duplicates).
+        </p>
+      </div>
+
+      <h3 class="font-bold text-lg text-gray-900 mb-3">Example:</h3>
+      <div class="bg-[#121212] text-gray-200 rounded-xl p-5 font-mono text-sm leading-relaxed overflow-x-auto">
+        <pre><code><span class="text-gray-500"># 1. List (Changeable)</span>
+fruits = [<span class="text-green-400">"apple"</span>, <span class="text-green-400">"banana"</span>, <span class="text-green-400">"cherry"</span>]
+fruits.<span class="text-blue-400">append</span>(<span class="text-green-400">"orange"</span>) <span class="text-gray-500"># Add new item</span>
+<span class="text-blue-400">print</span>(<span class="text-green-400">"List:"</span>, fruits) <span class="text-gray-500"># Output: ['apple', 'banana', 'cherry', 'orange']</span>
+
+<span class="text-gray-500"># 2. Dictionary (Key-Value)</span>
+student = {
+    <span class="text-green-400">"name"</span>: <span class="text-green-400">"Sophea"</span>,
+    <span class="text-green-400">"score"</span>: <span class="text-purple-400">95</span>,
+    <span class="text-green-400">"city"</span>: <span class="text-green-400">"Phnom Penh"</span>
+}
+<span class="text-blue-400">print</span>(<span class="text-green-400">"Student Name:"</span>, student[<span class="text-green-400">"name"</span>]) <span class="text-gray-500"># Output: Sophea</span>
+
+<span class="text-gray-500"># 3. Tuple (Unchangeable)</span>
+(<span class="text-purple-400">11.5564</span>, <span class="text-purple-400">104.9282</span>)
+
+<span class="text-gray-500"># 4. Set (Unique items only)</span>
+{<span class="text-purple-400">1</span>, <span class="text-purple-400">2</span>, <span class="text-purple-400">2</span>, <span class="text-purple-400">3</span>, <span class="text-purple-400">4</span>, <span class="text-purple-400">4</span>}
+<span class="text-blue-400">print</span>(<span class="text-green-400">"Set:"</span>, numbers) <span class="text-gray-500"># Output: {1, 2, 3, 4}</span></code></pre>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-[#0a1f44] dark:bg-[#050b18] text-blue-100 mt-10">
+    <div class="max-w-6xl mx-auto px-4 py-12 grid md:grid-cols-3 gap-8 text-sm">
+      <div>
+        <img src="/Pictures/logo.jpg" alt="IT Training Center — Learn, Practice, Grow" class="h-32 w-32 rounded-2xl">
+        <p class="mt-3">Learn IT Skills. Build Your Future.</p>
+      </div>
+      <div>
+        <b class="text-white text-lg">Quick Links</b>
+        <div class="mt-3 flex flex-col gap-2"><a href="index.html" class="hover:text-white transition">Home</a><a
+            href="about.html" class="hover:text-white transition">About</a><a href="about.html"
+            class="hover:text-white transition">Courses</a><a href="courses.html"
+            class="hover:text-white transition">Contact</a><a href="contact.html"
+            class="hover:text-white transition">Enroll Now</a><a href="enroll now.html"></a></div>
+      </div>
+      <div>
+        <b class="text-white text-lg">Contact</b>
+        <div class="mt-3 flex flex-col gap-3">
+          <a href="https://t.me/ITTrainingCenter" target="_blank" rel="noopener"
+            class="flex items-center gap-4 hover:text-white transition"><i
+              class="fa-brands fa-telegram text-xl text-white"></i><span>Telegram</span></a>
+          <a href="https://facebook.com/" target="_blank" rel="noopener"
+            class="flex items-center gap-4 hover:text-white transition"><i
+              class="fa-brands fa-facebook-f text-xl text-white"></i><span>Facebook</span></a>
+          <div class="flex items-center gap-4"><i class="fa-solid fa-location-dot text-xl text-white"></i><span>Phnom
+              Penh, Cambodia</span></div>
+          <a href="tel:+855716357824" class="flex items-center gap-4 hover:text-white transition"><i
+              class="fa-solid fa-phone text-xl text-white"></i><span>+855 716357824</span></a>
+          <a href="mailto:info@ittrainingcenter.com" class="flex items-center gap-4 hover:text-white transition"><i
+              class="fa-regular fa-envelope text-xl text-white"></i><span>info@ittrainingcenter.com</span></a>
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-xs py-4 border-t border-white/10 dark:border-[#2a3956]">© 2026 IT Training Center. All
+      rights reserved.</p>
+  </footer>
+  <a href="#top" aria-label="Back to top"
+    class="fixed right-4 bottom-4 w-11 h-11 rounded-full bg-[#7C3E81] text-white shadow-lg grid place-items-center">↑</a>
+
+</body>
+
+</html>

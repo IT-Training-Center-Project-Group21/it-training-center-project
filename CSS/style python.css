@@ -1,0 +1,67 @@
+      @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Kantumruy+Pro:wght@400;500;600;700&display=swap");
+      body {
+        font-family: "Kantumruy Pro", sans-serif;
+      }
+      code,
+      pre {
+        font-family: "Fira Code", monospace;
+      }
+      body {
+        font-family: "Kantumruy Pro", sans-serif;
+      }
+
+      code,
+      pre {
+        font-family: "Fira Code", monospace;
+      }
+
+      .font-python {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 900;
+      }
+      @keyframes python-glow {
+        0%,
+        100% {
+          text-shadow:
+            0 0 15px rgba(56, 189, 248, 0.6),
+            0 0 35px rgba(56, 189, 248, 0.4),
+            0 0 60px rgba(14, 165, 233, 0.2);
+        }
+        50% {
+          text-shadow:
+            0 0 25px rgba(56, 189, 248, 0.9),
+            0 0 50px rgba(56, 189, 248, 0.7),
+            0 0 80px rgba(14, 165, 233, 0.5);
+        }
+      }
+
+      @keyframes tech-rain {
+        0% {
+          transform: translateY(-100%);
+          opacity: 0;
+        }
+        50% {
+          opacity: 0.8;
+        }
+        100% {
+          transform: translateY(300px);
+          opacity: 0;
+        }
+      }
+      
+      .animate-python-glow {
+        animation: python-glow 3s ease-in-out infinite;
+      }
+
+      .tech-line {
+        position: absolute;
+        width: 1px;
+        height: 80px;
+        background: linear-gradient(
+          to bottom,
+          transparent,
+          #38bdf8,
+          transparent
+        );
+        animation: tech-rain 2.5s infinite linear;
+      }
