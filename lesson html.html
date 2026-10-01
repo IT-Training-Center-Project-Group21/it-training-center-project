@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson html</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="icon" type="image/svg+xml" href="/Pictures/favicon.png">
+  <link rel="stylesheet" href="output.css" />
+  <link rel="stylesheet" href="/CSS/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body class="text-gray-800 bg-white font-sans leading-normal">
+  <header class="fixed top-0 inset-x-0 z-40 bg-white/90 dark:bg-[#0b1220]/90 backdrop-blur shadow-sm">
+    <input type="checkbox" id="menu-toggle" class="peer hidden" aria-hidden="true">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 font-extrabold text-[#01366F] dark:text-[#8ab4ff]"
+        aria-label="IT Training Center — Home">
+        <img src="/Pictures/logo-icon.png" alt="" class="h-10 w-auto rounded-md p-0.5"><span
+          class="hidden min-[400px]:inline text-sm sm:text-base">IT Training Center</span>
+      </a>
+      <div class="flex items-center gap-6 lg:gap-8">
+        <nav class="hidden md:flex gap-6 lg:gap-8 text-sm font-medium"><a href="index.html"
+            class="py-1 border-b-2 border-transparent hover:border-blue-900 hover:text-blue-900 dark:hover:text-blue-900 transition-all duration-300">Home</a><a
+            href="about.html"
+            class="py-1 border-b-2 border-transparent hover:border-blue-900 hover:text-blue-900 dark:hover:text-blue-900 transition-all duration-300">About</a><a
+            href="courses.html"
+            class="py-1 border-b-2 border-blue-900 text-blue-900 dark:text-blue-900 hover:border-blue-900 hover:text-blue-900 dark:hover:text-blue-900 transition-all duration-300">Courses</a><a
+            href="contact.html"
+            class="py-1 border-b-2 border-transparent hover:border-blue-900 hover:text-blue-900 dark:hover:text-blue-900 transition-all duration-300">Contact</a>
+        </nav>
+        <a href="enroll-now.html"
+          class="inline-block text-center transition-all duration-300 hover:scale-105 hover:shadow-xl bg-[#0a3d62] text-white px-3 sm:px-4 py-2 rounded-lg font-semibold text-xs sm:text-sm">Enroll
+          Now</a>
+        <label for="menu-toggle" aria-label="Toggle menu" class="md:hidden p-2 text-2xl cursor-pointer">☰</label>
+      </div>
+    </div>
+    <div
+      class="md:hidden bg-white dark:bg-[#111a2e] border-t dark:border-[#2a3956] max-h-0 overflow-hidden transition-all duration-500 peer-checked:max-h-96">
+      <div class="px-4 py-2 flex flex-col">
+        <a href="index.html" class="py-3 border-b dark:border-[#2a3956] font-medium">Home</a>
+        <a href="about.html" class="py-3 border-b dark:border-[#2a3956] font-medium">About</a>
+        <a href="courses.html" class="py-3 border-b dark:border-[#2a3956] font-medium">Courses</a>
+        <a href="contact.html" class="py-3 border-b dark:border-[#2a3956] font-medium">Contact</a>
+
+      </div>
+
+    </div>
+  </header>
+  <div
+    class="relative w-full min-h-[60vh] flex items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_center,_#00a8c6_0%,_#054354_50%,_#01121a_100%)]">
+    <div class="absolute -inset-[150%] opacity-20 pointer-events-none bg-starburst-pattern"
+      style="animation: spinSlow 50s linear infinite reverse"></div>
+    <div
+      class="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(165,243,252,0.4)_0%,_transparent_65%)] pointer-events-none animate-pulse-glow">
+    </div>
+    <div
+      class="absolute inset-0 bg-[radial-gradient(circle_at_center,_transparent_40%,_rgba(1,18,26,0.85)_100%)] pointer-events-none">
+    </div>
+    <div class="relative z-10 flex flex-col items-center justify-center text-center px-4">
+      <h1
+        class="text-[12vw] sm:text-[8vw] font-black tracking-tighter text-slate-100 leading-none animate-text-float drop-shadow-[0_5px_5px_rgba(0,0,0,0.6)]">
+        HTML
+      </h1>
+    </div>
+  </div>
+  </section>
+
+  <main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 py-10 w-full">
+    <div class="text-center mb-10">
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight mb-3">
+        Hypertext Markup Language
+      </h1>
+      <p class="text-gray-600 text-sm sm:text-base max-w-2xl mx-auto">
+        HTML is the standard markup language for documents designed to be
+        displayed in a web browser.
+      </p>
+    </div>
+    <section class="mb-12 bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-100">
+      <h2 class="text-xl sm:text-2xl font-bold text-gray-800 text-center mb-4">
+        1. Hypertext Markup Language (HTML)
+      </h2>
+      <h3 class="text-lg font-semibold text-gray-800 text-center mb-4">
+        Lesson 1: Introduction to HTML and the basic structure of web
+        documents.
+      </h3>
+      <p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-6">
+        HTML (Hypertext Markup Language) is the key language for creating
+        structure and layout of website pages. An HTML document starts with
+        <code class="bg-gray-100 text-blue-700 px-2 py-0.5 rounded font-mono text-xs">&lt;!DOCTYPE html&gt;</code>
+        and contains tags such as
+        <code class="bg-gray-100 text-blue-700 px-2 py-0.5 rounded font-mono text-xs">&lt;html&gt;</code>,
+        <code class="bg-gray-100 text-blue-700 px-2 py-0.5 rounded font-mono text-xs">&lt;head&gt;</code>,
+        <code class="bg-gray-100 text-blue-700 px-2 py-0.5 rounded font-mono text-xs">&lt;title&gt;</code>, and
+        <code class="bg-gray-100 text-blue-700 px-2 py-0.5 rounded font-mono text-xs">&lt;body&gt;</code>
+        which organize elements and contain visible content on the screen.
+      </p>
+      <div class="mt-4">
+        <span class="block text-sm font-bold text-gray-700 mb-2">Example:</span>
+        <div class="bg-[#121212] rounded-2xl overflow-hidden shadow-2xl border border-gray-800 font-mono">
+          <div class="px-6 py-3 border-b border-gray-800 text-gray-300 font-medium text-sm">
+            index.html
+          </div>
+          <pre class="p-6 text-xs sm:text-sm text-gray-300 overflow-x-auto leading-relaxed"><code><span class="text-rose-400">&lt;!DOCTYPE html&gt;</span>
+<span class="text-sky-400">&lt;html</span> <span class="text-amber-300">lang</span>=<span class="text-emerald-400">"en"</span><span class="text-sky-400">&gt;</span>
+<span class="text-sky-400">&lt;head&gt;</span>
+    <span class="text-sky-400">&lt;meta</span> <span class="text-amber-300">charset</span>=<span class="text-emerald-400">"UTF-8"</span><span class="text-sky-400">&gt;</span>
+    <span class="text-sky-400">&lt;meta</span> <span class="text-amber-300">name</span>=<span class="text-emerald-400">"viewport"</span> <span class="text-amber-300">content</span>=<span class="text-emerald-400">"width=device-width, initial-scale=1.0"</span><span class="text-sky-400">&gt;</span>
+    <span class="text-sky-400">&lt;title&gt;</span><span class="text-gray-100">My First Website</span><span class="text-sky-400">&lt;/title&gt;</span>
+<span class="text-sky-400">&lt;/head&gt;</span>
+<span class="text-sky-400">&lt;body&gt;</span>
+    <span class="text-sky-400">&lt;h1&gt;</span><span class="text-gray-100">Welcome to my first website!</span><span class="text-sky-400">&lt;/h1&gt;</span>
+    <span class="text-sky-400">&lt;p&gt;</span><span class="text-gray-100">This is the text displayed on the web screen.</span><span class="text-sky-400">&lt;/p&gt;</span>
+<span class="text-sky-400">&lt;/body&gt;</span>
+<span class="text-sky-400">&lt;/html&gt;</span></code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lesson 2 -->
+    <section class="mb-12 bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-100">
+      <h3 class="text-lg font-semibold text-gray-800 text-center mb-4">
+        Lesson 2: Using HTML tags for headings, paragraphs, and lists.
+      </h3>
+      <p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-4">
+        The display of text on the website must use the tag according to its
+        role:
+      </p>
+      <ul class="list-disc pl-5 text-gray-600 text-sm sm:text-base space-y-2 mb-6">
+        <li>
+          <strong class="text-gray-800">Headings (&lt;h1&gt; to &lt;h6&gt;):</strong>
+          Used for headings from large to small.
+        </li>
+        <li>
+          <strong class="text-gray-800">Paragraph (&lt;p&gt;):</strong> Used
+          to write paragraph text.
+        </li>
+        <li>
+          <strong class="text-gray-800">Lists (&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;):</strong>
+          Used to create structured bulleted or numbered lists.
+        </li>
+      </ul>
+
+      <div>
+        <span class="block text-sm font-bold text-gray-700 mb-2">Example:</span>
+        <div class="bg-[#121212] rounded-2xl overflow-hidden shadow-2xl border border-gray-800 font-mono">
+          <div class="px-6 py-3 border-b border-gray-800 text-gray-300 font-medium text-sm">
+            index.html
+          </div>
+          <pre class="p-6 text-xs sm:text-sm text-gray-300 overflow-x-auto leading-relaxed"><code><span class="text-gray-500">&lt;!-- Title / Heading --&gt;</span>
+<span class="text-sky-400">&lt;h1&gt;</span><span class="text-gray-100">Main Heading Heading 1</span><span class="text-sky-400">&lt;/h1&gt;</span>
+<span class="text-sky-400">&lt;h2&gt;</span><span class="text-gray-100">Subheading Heading 2</span><span class="text-sky-400">&lt;/h2&gt;</span>
+
+<span class="text-gray-500">&lt;!-- Paragraph --&gt;</span>
+<span class="text-sky-400">&lt;p&gt;</span><span class="text-gray-100">Learning Web Development helps us create websites on our own.</span><span class="text-sky-400">&lt;/p&gt;</span>
+
+<span class="text-gray-500">&lt;!-- Unordered List --&gt;</span>
+<span class="text-sky-400">&lt;h3&gt;</span><span class="text-gray-100">Skills we learn:</span><span class="text-sky-400">&lt;/h3&gt;</span>
+<span class="text-sky-400">&lt;ul&gt;</span>
+    <span class="text-sky-400">&lt;li&gt;</span><span class="text-gray-100">HTML5</span><span class="text-sky-400">&lt;/li&gt;</span>
+    <span class="text-sky-400">&lt;li&gt;</span><span class="text-gray-100">CSS3</span><span class="text-sky-400">&lt;/li&gt;</span>
+    <span class="text-sky-400">&lt;li&gt;</span><span class="text-gray-100">JavaScript</span><span class="text-sky-400">&lt;/li&gt;</span>
+<span class="text-sky-400">&lt;/ul&gt;</span>
+
+<span class="text-gray-500">&lt;!-- Ordered List --&gt;</span>
+<span class="text-sky-400">&lt;h3&gt;</span><span class="text-gray-100">Learning steps:</span><span class="text-sky-400">&lt;/h3&gt;</span>
+<span class="text-sky-400">&lt;ol&gt;</span>
+    <span class="text-sky-400">&lt;li&gt;</span><span class="text-gray-100">Learn HTML Fundamentals</span><span class="text-sky-400">&lt;/li&gt;</span>
+    <span class="text-sky-400">&lt;li&gt;</span><span class="text-gray-100">Learn Styling with CSS</span><span class="text-sky-400">&lt;/li&gt;</span>
+<span class="text-sky-400">&lt;/ol&gt;</span></code></pre>
+        </div>
+      </div>
+    </section>
+    <section class="mb-12 bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-100">
+      <h3 class="text-lg font-semibold text-gray-800 text-center mb-4">
+        Lesson 3: Uploading images, videos, and links (Links & Media)
+      </h3>
+      <p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-4">
+        To make the website interactive, context is added to link pages along
+        with images and videos:
+      </p>
+      <ul class="list-disc pl-5 text-gray-600 text-sm sm:text-base space-y-2 mb-6">
+        <li>
+          <strong class="text-gray-800">Anchor Tag (&lt;a&gt;):</strong> Uses
+          <code class="bg-gray-100 text-blue-700 px-1.5 py-0.5 rounded text-xs font-mono">href</code>
+          attribute to link context to various sites.
+        </li>
+        <li>
+          <strong class="text-gray-800">Image Tag (&lt;img&gt;):</strong> Uses
+          <code class="bg-gray-100 text-blue-700 px-1.5 py-0.5 rounded text-xs font-mono">src</code>
+          attribute for image sources and
+          <code class="bg-gray-100 text-blue-700 px-1.5 py-0.5 rounded text-xs font-mono">alt</code>
+          for displaying alternate text when the image fails to load.
+        </li>
+        <li>
+          <strong class="text-gray-800">Video Tag (&lt;video&gt;):</strong>
+          Used to play video with controls attribute.
+        </li>
+      </ul>
+
+      <div>
+        <span class="block text-sm font-bold text-gray-700 mb-2">Example:</span>
+        <div class="bg-[#121212] rounded-2xl overflow-hidden shadow-2xl border border-gray-800 font-mono">
+          <div class="px-6 py-3 border-b border-gray-800 text-gray-300 font-medium text-sm">
+            index.html
+          </div>
+          <pre class="p-6 text-xs sm:text-sm text-gray-300 overflow-x-auto leading-relaxed"><code><span class="text-gray-500">&lt;!-- Link --&gt;</span>
+<span class="text-sky-400">&lt;a</span> <span class="text-amber-300">href</span>=<span class="text-emerald-400">"https://www.google.com"</span> <span class="text-amber-300">target</span>=<span class="text-emerald-400">"_blank"</span><span class="text-sky-400">&gt;</span><span class="text-gray-100">Go to Google</span><span class="text-sky-400">&lt;/a&gt;</span>
+
+<span class="text-gray-500">&lt;!-- Image --&gt;</span>
+<span class="text-sky-400">&lt;img</span> <span class="text-amber-300">src</span>=<span class="text-emerald-400">"profile.jpg"</span> <span class="text-amber-300">alt</span>=<span class="text-emerald-400">"Sample photo"</span> <span class="text-amber-300">width</span>=<span class="text-purple-400">"200"</span> <span class="text-amber-300">height</span>=<span class="text-purple-400">"200"</span><span class="text-sky-400">&gt;</span>
+
+<span class="text-gray-500">&lt;!-- Video --&gt;</span>
+<span class="text-sky-400">&lt;video</span> <span class="text-amber-300">width</span>=<span class="text-purple-400">"320"</span> <span class="text-amber-300">height</span>=<span class="text-purple-400">"240"</span> <span class="text-amber-300">controls</span><span class="text-sky-400">&gt;</span>
+    <span class="text-sky-400">&lt;source</span> <span class="text-amber-300">src</span>=<span class="text-emerald-400">"sample-video.mp4"</span> <span class="text-amber-300">type</span>=<span class="text-emerald-400">"video/mp4"</span><span class="text-sky-400">&gt;</span>
+    <span class="text-gray-100">Your browser does not support this video.</span>
+<span class="text-sky-400">&lt;/video&gt;</span></code></pre>
+        </div>
+      </div>
+    </section>
+    <section class="mb-12 bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-100">
+      <h3 class="text-lg font-semibold text-gray-800 text-center mb-4">
+        Lesson 4: Creating a form to collect information from users
+      </h3>
+      <p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-6">
+        Web forms permit user interaction to collect data from users, with
+        serving forms designed to contain standard components like
+        <code class="bg-gray-100 text-blue-700 px-1.5 py-0.5 rounded text-xs font-mono">&lt;input&gt;</code>,
+        <code class="bg-gray-100 text-blue-700 px-1.5 py-0.5 rounded text-xs font-mono">&lt;label&gt;</code>,
+        <code class="bg-gray-100 text-blue-700 px-1.5 py-0.5 rounded text-xs font-mono">&lt;textarea&gt;</code>, and
+        <code class="bg-gray-100 text-blue-700 px-1.5 py-0.5 rounded text-xs font-mono">&lt;button&gt;</code>.
+      </p>
+
+      <div>
+        <span class="block text-sm font-bold text-gray-700 mb-2">Example:</span>
+        <div class="bg-[#121212] rounded-2xl overflow-hidden shadow-2xl border border-gray-800 font-mono">
+          <div class="px-6 py-3 border-b border-gray-800 text-gray-300 font-medium text-sm">
+            index.html
+          </div>
+          <pre class="p-6 text-xs sm:text-sm text-gray-300 overflow-x-auto leading-relaxed"><code><span class="text-sky-400">&lt;form</span> <span class="text-amber-300">action</span>=<span class="text-emerald-400">"/submit"</span> <span class="text-amber-300">method</span>=<span class="text-emerald-400">"POST"</span><span class="text-sky-400">&gt;</span>
+    <span class="text-gray-500">&lt;!-- Name Input Box --&gt;</span>
+    <span class="text-sky-400">&lt;label</span> <span class="text-amber-300">for</span>=<span class="text-emerald-400">"fullname"</span><span class="text-sky-400">&gt;</span><span class="text-gray-100">Full Name:</span><span class="text-sky-400">&lt;/label&gt;</span>
+    <span class="text-sky-400">&lt;input</span> <span class="text-amber-300">type</span>=<span class="text-emerald-400">"text"</span> <span class="text-amber-300">id</span>=<span class="text-emerald-400">"fullname"</span> <span class="text-amber-300">name</span>=<span class="text-emerald-400">"fullname"</span> <span class="text-amber-300">placeholder</span>=<span class="text-emerald-400">"Enter name..."</span> <span class="text-amber-300">required</span><span class="text-sky-400">&gt;</span>
+
+    <span class="text-gray-500">&lt;!-- Email Input Box --&gt;</span>
+    <span class="text-sky-400">&lt;label</span> <span class="text-amber-300">for</span>=<span class="text-emerald-400">"email"</span><span class="text-sky-400">&gt;</span><span class="text-gray-100">Email:</span><span class="text-sky-400">&lt;/label&gt;</span>
+    <span class="text-sky-400">&lt;input</span> <span class="text-amber-300">type</span>=<span class="text-emerald-400">"email"</span> <span class="text-amber-300">id</span>=<span class="text-emerald-400">"email"</span> <span class="text-amber-300">name</span>=<span class="text-emerald-400">"email"</span> <span class="text-amber-300">placeholder</span>=<span class="text-emerald-400">"example@gmail.com"</span> <span class="text-amber-300">required</span><span class="text-sky-400">&gt;</span>
+
+    <span class="text-gray-500">&lt;!-- Message Input Box --&gt;</span>
+    <span class="text-sky-400">&lt;label</span> <span class="text-amber-300">for</span>=<span class="text-emerald-400">"message"</span><span class="text-sky-400">&gt;</span><span class="text-gray-100">Your message:</span><span class="text-sky-400">&lt;/label&gt;</span>
+    <span class="text-sky-400">&lt;textarea</span> <span class="text-amber-300">id</span>=<span class="text-emerald-400">"message"</span> <span class="text-amber-300">name</span>=<span class="text-emerald-400">"message"</span> <span class="text-amber-300">rows</span>=<span class="text-purple-400">"4"</span> <span class="text-amber-300">cols</span>=<span class="text-purple-400">"30"</span><span class="text-sky-400">&gt;&lt;/textarea&gt;</span>
+
+    <span class="text-gray-500">&lt;!-- Send button --&gt;</span>
+    <span class="text-sky-400">&lt;button</span> <span class="text-amber-300">type</span>=<span class="text-emerald-400">"submit"</span><span class="text-sky-400">&gt;</span><span class="text-gray-100">Send Message</span><span class="text-sky-400">&lt;/button&gt;</span>
+<span class="text-sky-400">&lt;/form&gt;</span></code></pre>
+        </div>
+      </div>
+    </section>
+    <section class="mb-12 bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-100">
+      <h3 class="text-lg font-semibold text-gray-800 text-center mb-4">
+        Lesson 5: Using Semantic HTML5 for organizing website layouts.
+      </h3>
+      <p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-6">
+        Semantic HTML is the usage of HTML tags that have a clear meaning for
+        each part of the website, such as
+        <code class="bg-gray-100 text-blue-700 px-1.5 py-0.5 rounded text-xs font-mono">&lt;header&gt;</code>,
+        <code class="bg-gray-100 text-blue-700 px-1.5 py-0.5 rounded text-xs font-mono">&lt;main&gt;</code>,
+        <code class="bg-gray-100 text-blue-700 px-1.5 py-0.5 rounded text-xs font-mono">&lt;section&gt;</code>,
+        <code class="bg-gray-100 text-blue-700 px-1.5 py-0.5 rounded text-xs font-mono">&lt;article&gt;</code>, and
+        <code class="bg-gray-100 text-blue-700 px-1.5 py-0.5 rounded text-xs font-mono">&lt;footer&gt;</code>. The use
+        of Semantic HTML tags improves search engine optimization
+        (SEO) and helps web browsers understand the website layout structure.
+      </p>
+
+      <div>
+        <span class="block text-sm font-bold text-gray-700 mb-2">Example:</span>
+        <div class="bg-[#121212] rounded-2xl overflow-hidden shadow-2xl border border-gray-800 font-mono">
+          <div class="px-6 py-3 border-b border-gray-800 text-gray-300 font-medium text-sm">
+            index.html
+          </div>
+          <pre class="p-6 text-xs sm:text-sm text-gray-300 overflow-x-auto leading-relaxed"><code><span class="text-rose-400">&lt;!DOCTYPE html&gt;</span>
+<span class="text-sky-400">&lt;html</span> <span class="text-amber-300">lang</span>=<span class="text-emerald-400">"en"</span><span class="text-sky-400">&gt;</span>
+<span class="text-sky-400">&lt;body&gt;</span>
+
+    <span class="text-gray-500">&lt;!-- Header Section --&gt;</span>
+    <span class="text-sky-400">&lt;header&gt;</span>
+        <span class="text-sky-400">&lt;h1&gt;</span><span class="text-gray-100">IT Website</span><span class="text-sky-400">&lt;/h1&gt;</span>
+        <span class="text-sky-400">&lt;nav&gt;</span>
+            <span class="text-sky-400">&lt;a</span> <span class="text-amber-300">href</span>=<span class="text-emerald-400">"#"</span><span class="text-sky-400">&gt;</span><span class="text-gray-100">Home</span><span class="text-sky-400">&lt;/a&gt;</span> | 
+            <span class="text-sky-400">&lt;a</span> <span class="text-amber-300">href</span>=<span class="text-emerald-400">"#"</span><span class="text-sky-400">&gt;</span><span class="text-gray-100">Courses</span><span class="text-sky-400">&lt;/a&gt;</span>
+        <span class="text-sky-400">&lt;/nav&gt;</span>
+    <span class="text-sky-400">&lt;/header&gt;</span>
+
+    <span class="text-gray-500">&lt;!-- Main Content Section --&gt;</span>
+    <span class="text-sky-400">&lt;main&gt;</span>
+        <span class="text-sky-400">&lt;article&gt;</span>
+            <span class="text-sky-400">&lt;h2&gt;</span><span class="text-gray-100">Latest News</span><span class="text-sky-400">&lt;/h2&gt;</span>
+            <span class="text-sky-400">&lt;section&gt;</span>
+                <span class="text-sky-400">&lt;h3&gt;</span><span class="text-gray-100">HTML5 Semantic Structure</span><span class="text-sky-400">&lt;/h3&gt;</span>
+                <span class="text-sky-400">&lt;p&gt;</span><span class="text-gray-100">Semantic HTML tags keep code organized and easy to manage.</span><span class="text-sky-400">&lt;/p&gt;</span>
+            <span class="text-sky-400">&lt;/section&gt;</span>
+        <span class="text-sky-400">&lt;/article&gt;</span>
+    <span class="text-sky-400">&lt;/main&gt;</span>
+
+    <span class="text-gray-500">&lt;!-- Footer Section --&gt;</span>
+    <span class="text-sky-400">&lt;footer&gt;</span>
+        <span class="text-sky-400">&lt;p&gt;</span><span class="text-gray-100">&copy; 2026 All rights reserved by MyWebsite</span><span class="text-sky-400">&lt;/p&gt;</span>
+    <span class="text-sky-400">&lt;/footer&gt;</span>
+
+<span class="text-sky-400">&lt;/body&gt;</span>
+<span class="text-sky-400">&lt;/html&gt;</span></code></pre>
+        </div>
+      </div>
+    </section>
+    <section class="mb-12 bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-100">
+      <h3 class="text-lg font-semibold text-gray-800 text-center mb-4">
+        Lesson 6: Structuring Data with HTML Tables
+      </h3>
+      <p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-6">
+        HTML tables allow developers to arrange data into rows and columns using
+        <code class="bg-gray-100 text-blue-700 px-1.5 py-0.5 rounded text-xs font-mono">&lt;table&gt;</code>,
+        <code class="bg-gray-100 text-blue-700 px-1.5 py-0.5 rounded text-xs font-mono">&lt;tr&gt;</code>,
+        <code class="bg-gray-100 text-blue-700 px-1.5 py-0.5 rounded text-xs font-mono">&lt;th&gt;</code>, and
+        <code class="bg-gray-100 text-blue-700 px-1.5 py-0.5 rounded text-xs font-mono">&lt;td&gt;</code>.
+      </p>
+
+      <div>
+        <span class="block text-sm font-bold text-gray-700 mb-2">Example:</span>
+        <div class="bg-[#121212] rounded-2xl overflow-hidden shadow-2xl border border-gray-800 font-mono">
+          <div class="px-6 py-3 border-b border-gray-800 text-gray-300 font-medium text-sm">
+            index.html
+          </div>
+          <pre class="p-6 text-xs sm:text-sm text-gray-300 overflow-x-auto leading-relaxed"><code><span class="text-sky-400">&lt;table&gt;</span>
+    <span class="text-gray-500">&lt;!-- Table Header --&gt;</span>
+    <span class="text-sky-400">&lt;tr&gt;</span>
+        <span class="text-sky-400">&lt;th&gt;</span><span class="text-gray-100">Course</span><span class="text-sky-400">&lt;/th&gt;</span>
+        <span class="text-sky-400">&lt;th&gt;</span><span class="text-gray-100">Duration</span><span class="text-sky-400">&lt;/th&gt;</span>
+    <span class="text-sky-400">&lt;/tr&gt;</span>
+    <span class="text-gray-500">&lt;!-- Table Row 1 --&gt;</span>
+    <span class="text-sky-400">&lt;tr&gt;</span>
+        <span class="text-sky-400">&lt;td&gt;</span><span class="text-gray-100">HTML5 Fundamentals</span><span class="text-sky-400">&lt;/td&gt;</span>
+        <span class="text-sky-400">&lt;td&gt;</span><span class="text-gray-100">2 Weeks</span><span class="text-sky-400">&lt;/td&gt;</span>
+    <span class="text-sky-400">&lt;/tr&gt;</span>
+<span class="text-sky-400">&lt;/table&gt;</span></code></pre>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#0a1f44] dark:bg-[#050b18] text-blue-100 mt-10">
+    <div class="max-w-6xl mx-auto px-4 py-12 grid md:grid-cols-3 gap-8 text-sm">
+      <div>
+        <img src="/Pictures/logo.jpg" alt="IT Training Center — Learn, Practice, Grow" class="h-32 w-32 rounded-2xl">
+        <p class="mt-3">Learn IT Skills. Build Your Future.</p>
+      </div>
+      <div>
+        <b class="text-white text-lg">Quick Links</b>
+        <div class="mt-3 flex flex-col gap-2"><a href="index.html" class="hover:text-white transition">Home</a><a
+            href="about.html" class="hover:text-white transition">About</a><a href="about.html"
+            class="hover:text-white transition">Courses</a><a href="courses.html"
+            class="hover:text-white transition">Contact</a><a href="contact.html"
+            class="hover:text-white transition">Enroll Now</a><a href="enroll now.html"></a></div>
+      </div>
+      <div>
+        <b class="text-white text-lg">Contact</b>
+        <div class="mt-3 flex flex-col gap-3">
+          <a href="https://t.me/ITTrainingCenter" target="_blank" rel="noopener"
+            class="flex items-center gap-4 hover:text-white transition"><i
+              class="fa-brands fa-telegram text-xl text-white"></i><span>Telegram</span></a>
+          <a href="https://facebook.com/" target="_blank" rel="noopener"
+            class="flex items-center gap-4 hover:text-white transition"><i
+              class="fa-brands fa-facebook-f text-xl text-white"></i><span>Facebook</span></a>
+          <div class="flex items-center gap-4"><i class="fa-solid fa-location-dot text-xl text-white"></i><span>Phnom
+              Penh, Cambodia</span></div>
+          <a href="tel:+855716357824" class="flex items-center gap-4 hover:text-white transition"><i
+              class="fa-solid fa-phone text-xl text-white"></i><span>+855 716357824</span></a>
+          <a href="mailto:info@ittrainingcenter.com" class="flex items-center gap-4 hover:text-white transition"><i
+              class="fa-regular fa-envelope text-xl text-white"></i><span>info@ittrainingcenter.com</span></a>
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-xs py-4 border-t border-white/10 dark:border-[#2a3956]">© 2026 IT Training Center. All
+      rights reserved.</p>
+  </footer>
+  <a href="#top" aria-label="Back to top"
+    class="fixed right-4 bottom-4 w-11 h-11 rounded-full bg-[#7C3E81] text-white shadow-lg grid place-items-center">↑</a>
+
+  <script src="./courses style.js"></script>
+</body>
+
+</html>

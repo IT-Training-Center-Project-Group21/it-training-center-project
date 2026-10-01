@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson sql</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/svg+xml" href="/Pictures/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class="text-gray-800 bg-white font-sans leading-normal">
+  <header class="fixed top-0 inset-x-0 z-40 bg-white/90 dark:bg-[#0b1220]/90 backdrop-blur shadow-sm">
+    <input type="checkbox" id="menu-toggle" class="peer hidden" aria-hidden="true">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 font-extrabold text-[#01366F] dark:text-[#8ab4ff]"
+        aria-label="IT Training Center — Home">
+        <img src="/Pictures/logo-icon.png" alt="" class="h-10 w-auto rounded-md p-0.5"><span
+          class="hidden min-[400px]:inline text-sm sm:text-base">IT Training Center</span>
+      </a>
+      <div class="flex items-center gap-6 lg:gap-8">
+        <nav class="hidden md:flex gap-6 lg:gap-8 text-sm font-medium"><a href="index.html"
+            class="py-1 border-b-2 border-transparent hover:border-blue-900 hover:text-blue-900 dark:hover:text-blue-900 transition-all duration-300">Home</a><a
+            href="about.html"
+            class="py-1 border-b-2 border-transparent hover:border-blue-900 hover:text-blue-900 dark:hover:text-blue-900 transition-all duration-300">About</a><a
+            href="courses.html"
+            class="py-1 border-b-2 border-blue-900 text-blue-900 dark:text-blue-900 hover:border-blue-900 hover:text-blue-900 dark:hover:text-blue-900 transition-all duration-300">Courses</a><a
+            href="contact.html"
+            class="py-1 border-b-2 border-transparent hover:border-blue-900 hover:text-blue-900 dark:hover:text-blue-900 transition-all duration-300">Contact</a>
+        </nav>
+        <a href="enroll-now.html"
+          class="inline-block text-center transition-all duration-300 hover:scale-105 hover:shadow-xl bg-[#0a3d62] text-white px-3 sm:px-4 py-2 rounded-lg font-semibold text-xs sm:text-sm">Enroll
+          Now</a>
+        <label for="menu-toggle" aria-label="Toggle menu" class="md:hidden p-2 text-2xl cursor-pointer">☰</label>
+      </div>
+    </div>
+    <div
+      class="md:hidden bg-white dark:bg-[#111a2e] border-t dark:border-[#2a3956] max-h-0 overflow-hidden transition-all duration-500 peer-checked:max-h-96">
+      <div class="px-4 py-2 flex flex-col">
+        <a href="index.html" class="py-3 border-b dark:border-[#2a3956] font-medium">Home</a>
+        <a href="about.html" class="py-3 border-b dark:border-[#2a3956] font-medium">About</a>
+        <a href="courses.html" class="py-3 border-b dark:border-[#2a3956] font-medium">Courses</a>
+        <a href="contact.html" class="py-3 border-b dark:border-[#2a3956] font-medium">Contact</a>
+
+      </div>
+
+    </div>
+  </header>
+
+  <main class="m-0 p-0 font-sans antialiased">
+    <a href="#" class="inline-flex items-center gap-1 text-gray-600 hover:text-gray-900 mb-6 transition">
+      <i data-lucide="arrow-left" class="w-5 h-5"></i>
+    </a>
+    
+    <section class="relative w-full h-[500px] flex items-center justify-center overflow-hidden bg-slate-950">
+      <canvas id="bg-canvas" class="absolute inset-0 z-0 pointer-events-none"></canvas>
+      <div
+        class="absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-cyan-500/20 rounded-full blur-[90px] pointer-events-none">
+      </div>
+      <main class="relative z-20 text-center select-none px-4 flex flex-col items-center justify-center">
+        <h1
+          class=" text-6xl md:text-8xl font-black tracking-widest text-transparent bg-clip-text bg-gradient-to-b from-white via-cyan-200 to-cyan-500 glow-text transition-all duration-300 hover:scale-105">
+          SQL
+        </h1>
+      </main>
+    </section>
+
+    <div>
+      <div
+        class="absolute -left-6 top-4 bg-slate-900/90 border border-blue-500/40 p-2 rounded-lg shadow-md text-blue-400">
+        <i data-lucide="search" class="w-5 h-5"></i>
+      </div>
+      <div
+        class="absolute -right-6 top-4 bg-slate-900/90 border border-blue-500/40 p-2 rounded-lg shadow-md text-cyan-400">
+        <i data-lucide="pie-chart" class="w-5 h-5"></i>
+      </div>
+      <div
+        class="absolute -left-8 bottom-6 bg-slate-900/90 border border-blue-500/40 p-2 rounded-lg shadow-md text-indigo-400">
+        <i data-lucide="table" class="w-5 h-5"></i>
+      </div>
+      <div
+        class="absolute -right-8 bottom-6 bg-slate-900/90 border border-blue-500/40 p-2 rounded-lg shadow-md text-blue-400">
+        <i data-lucide="file-code" class="w-5 h-5"></i>
+      </div>
+    </div>
+
+    <div class="text-center mb-8">
+      <h1 class="text-2xl font-bold text-gray-900 mb-2">Structured Query Language</h1>
+      <p class="text-gray-600 text-sm max-w-xl mx-auto leading-relaxed">
+        (SQL) is a standardized programming language used to manage, manipulate, and retrieve data stored in relational
+        databases.
+      </p>
+    </div>
+  </main>
+
+  <section class="max-w-3xl mx-auto px-4 py-6">
+    <section class="mb-10">
+      <h2 class="text-lg font-bold text-gray-900 mb-3">Lesson 1: Basics of Database and SQL Language</h2>
+
+      <div class="space-y-1.5 text-sm text-gray-700 leading-relaxed mb-6">
+        <p><strong class="text-gray-900">Database:</strong> A system that stores data in tables with rows and columns.
+        </p>
+        <p><strong class="text-gray-900">RDBMS:</strong> Software used to manage relational databases (e.g., MySQL,
+          PostgreSQL).</p>
+        <p><strong class="text-gray-900">SQL Commands:</strong> Commands used to create, read, update, and delete data
+          in a database.</p>
+      </div>
+
+      <h3 class="font-bold text-gray-900 mb-3">Example:</h3>
+      <div class="border border-gray-200 rounded-lg overflow-hidden bg-white shadow-sm mb-8">
+        <table class="w-full text-left text-sm text-gray-700 border-collapse">
+          <thead>
+            <tr class="border-b border-gray-200 bg-gray-50/50">
+              <th class="py-2.5 px-4 font-semibold text-gray-600">id</th>
+              <th class="py-2.5 px-4 font-semibold text-gray-600">name</th>
+              <th class="py-2.5 px-4 font-semibold text-gray-600">age</th>
+              <th class="py-2.5 px-4 font-semibold text-gray-600">city</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-100">
+            <tr>
+              <td class="py-2.5 px-4">1</td>
+              <td class="py-2.5 px-4">Sokha</td>
+              <td class="py-2.5 px-4">25</td>
+              <td class="py-2.5 px-4">Phnom Penh</td>
+            </tr>
+            <tr>
+              <td class="py-2.5 px-4">2</td>
+              <td class="py-2.5 px-4">Bopa</td>
+              <td class="py-2.5 px-4">18</td>
+              <td class="py-2.5 px-4">Siem Reap</td>
+            </tr>
+            <tr>
+              <td class="py-2.5 px-4">3</td>
+              <td class="py-2.5 px-4">Dara</td>
+              <td class="py-2.5 px-4">30</td>
+              <td class="py-2.5 px-4">Phnom Penh</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-lg font-bold text-gray-900 mb-3">Lesson 2: Data Structures (Lists, Dictionaries, Tuples, Sets)
+      </h2>
+      <div class="space-y-1.5 text-sm text-gray-700 leading-relaxed mb-6">
+        <p><strong class="text-gray-900">SELECT:</strong> Chooses columns to view.</p>
+        <p><strong class="text-gray-900">WHERE:</strong> Filters data based on conditions.</p>
+        <p><strong class="text-gray-900">ORDER BY:</strong> Sorts results (ASC for ascending, DESC for descending).</p>
+        <p><strong class="text-gray-900">LIMIT:</strong> Restricts the number of rows returned.</p>
+      </div>
+      <h3 class="font-bold text-gray-900 mb-3">Example:</h3>
+      <div class="bg-black rounded-lg overflow-hidden font-mono text-sm shadow-xl">
+        <div
+          class="bg-gray-900 px-4 py-2 border-b border-gray-800 text-gray-400 text-xs flex justify-between items-center">
+          <span>SQL</span>
+        </div>
+        <div class="p-4 space-y-1 text-gray-300 leading-relaxed overflow-x-auto">
+          <p class="text-gray-500">-- Select names and ages of users from Phnom Penh, sorted by age</p>
+          <p><span class="text-purple-400 font-semibold">SELECT</span> name, age</p>
+          <p><span class="text-purple-400 font-semibold">FROM</span> users</p>
+          <p><span class="text-purple-400 font-semibold">WHERE</span> city = <span class="text-emerald-400">'Phnom
+              Penh'</span></p>
+          <p><span class="text-purple-400 font-semibold">ORDER BY</span> age <span
+              class="text-purple-400 font-semibold">DESC</span></p>
+          <p><span class="text-purple-400 font-semibold">LIMIT</span> <span class="text-amber-400">2</span>;</p>
+          <br />
+          <p class="text-gray-500">-- Output Result:</p>
+          <p class="text-gray-500">-- Dara (30)</p>
+          <p class="text-gray-500">-- Sokha (25)</p>
+        </div>
+      </div>
+    </section>
+  </section>
+  <footer class="bg-[#0a1f44] dark:bg-[#050b18] text-blue-100 mt-10">
+    <div class="max-w-6xl mx-auto px-4 py-12 grid md:grid-cols-3 gap-8 text-sm">
+      <div>
+        <img src="/Pictures/logo.jpg" alt="IT Training Center — Learn, Practice, Grow" class="h-32 w-32 rounded-2xl">
+        <p class="mt-3">Learn IT Skills. Build Your Future.</p>
+      </div>
+      <div>
+        <b class="text-white text-lg">Quick Links</b>
+        <div class="mt-3 flex flex-col gap-2"><a href="index.html" class="hover:text-white transition">Home</a><a
+            href="about.html" class="hover:text-white transition">About</a><a href="about.html"
+            class="hover:text-white transition">Courses</a><a href="courses.html"
+            class="hover:text-white transition">Contact</a><a href="contact.html"
+            class="hover:text-white transition">Enroll Now</a><a href="enroll now.html"></a></div>
+      </div>
+      <div>
+        <b class="text-white text-lg">Contact</b>
+        <div class="mt-3 flex flex-col gap-3">
+          <a href="https://t.me/ITTrainingCenter" target="_blank" rel="noopener"
+            class="flex items-center gap-4 hover:text-white transition"><i
+              class="fa-brands fa-telegram text-xl text-white"></i><span>Telegram</span></a>
+          <a href="https://facebook.com/" target="_blank" rel="noopener"
+            class="flex items-center gap-4 hover:text-white transition"><i
+              class="fa-brands fa-facebook-f text-xl text-white"></i><span>Facebook</span></a>
+          <div class="flex items-center gap-4"><i class="fa-solid fa-location-dot text-xl text-white"></i><span>Phnom
+              Penh, Cambodia</span></div>
+          <a href="tel:+855716357824" class="flex items-center gap-4 hover:text-white transition"><i
+              class="fa-solid fa-phone text-xl text-white"></i><span>+855 716357824</span></a>
+          <a href="mailto:info@ittrainingcenter.com" class="flex items-center gap-4 hover:text-white transition"><i
+              class="fa-regular fa-envelope text-xl text-white"></i><span>info@ittrainingcenter.com</span></a>
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-xs py-4 border-t border-white/10 dark:border-[#2a3956]">© 2026 IT Training Center. All
+      rights reserved.</p>
+  </footer>
+  <a href="#top" aria-label="Back to top"
+    class="fixed right-4 bottom-4 w-11 h-11 rounded-full bg-[#7C3E81] text-white shadow-lg grid place-items-center">↑</a>
+
+  <script src="/JS/sql.js"></script>
+</body>
+
+</html>
